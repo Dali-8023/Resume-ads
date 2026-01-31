@@ -293,6 +293,36 @@ li {
     border-radius: 15px;
     font-size: 0.85rem;
     font-weight: 500;
+    transition: var(--transition);
+}
+
+.market-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 按区域设置不同颜色：美国、欧洲、东南亚 */
+.market-tag:nth-child(1) { 
+    background-color: rgba(255, 126, 95, 0.2); /* 美国 - 突出显示 */
+    border: 1px solid rgba(255, 126, 95, 0.3);
+}
+
+/* 欧洲国家（德国、法国、意大利、西班牙）*/
+.market-tag:nth-child(2),
+.market-tag:nth-child(3),
+.market-tag:nth-child(4),
+.market-tag:nth-child(5) {
+    background-color: rgba(74, 111, 165, 0.15); /* 欧洲 - 蓝色系 */
+}
+
+/* 东南亚国家（印尼、泰国、越南、马来西亚、菲律宾、新加坡）*/
+.market-tag:nth-child(6),
+.market-tag:nth-child(7),
+.market-tag:nth-child(8),
+.market-tag:nth-child(9),
+.market-tag:nth-child(10),
+.market-tag:nth-child(11) {
+    background-color: rgba(107, 199, 184, 0.15); /* 东南亚 - 绿色系 */
 }
 
 .stats {
